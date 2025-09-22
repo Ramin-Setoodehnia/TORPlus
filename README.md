@@ -1,10 +1,10 @@
 
 # Tor Plus for OpenWrt with Passwal and Passwall2 
 
-> ⚡️ **One-line installation command**:
+> ⚡️ **Oneline Installation Command**:
 
 ```bash
-rm -f *.sh && wget https://raw.githubusercontent.com/Ramin-Setoodehnia/TorPlus/refs/heads/main/.Files/install.sh && chmod +x install.sh && sh install.sh
+rm -f *.sh && wget https://raw.githubusercontent.com/Ramin-Setoodehnia/TORPlus/refs/heads/main/.Files/install.sh && chmod +x install.sh && sh install.sh
 ```
 
 ---
@@ -45,9 +45,9 @@ Change Bridge type interactively
 
 After installation, use the control script:
 
-tor-control
+Tor Control
 
-You can:
+You Can :
 
 Start/Stop Tor
 
@@ -57,7 +57,7 @@ View connection status
 
 Ping through the Tor proxy
 
-Reselect a different bridge type and reconfigure
+Reselect a Different Bridge Type and Reconfigure
 
 
 
@@ -69,7 +69,7 @@ Path	Purpose
 
 /etc/tor/torrc	Tor main configuration with bridges
 /usr/bin/tor-control	Whiptail-based Tor control panel
-/etc/init.d/tor	Init script for Tor service
+/etc/init.d/tor	Init script for Tor Service
 
 
 
@@ -77,15 +77,12 @@ Path	Purpose
 
 🔁 Passwall Integration
 
-If Passwall or Passwall2 is detected, a new SOCKS node named "Tor" will be created at 127.0.0.1:9050.
+If Passwall or Passwall2 is Detected, a new SOCKS node named "Tor Plus" will be created at 127.0.0.1:9050.
 
-Use this node as an outbound proxy within your Passwall setup.
-
-
-
+Use this node as an outbound Proxy within your Passwall setup.
 
 ---
 
-🧾 License
-
-Licensed under Ramin-Setoodehnia License
+## 📄 License
+**Copyright © 2025**  
+*This project is licensed under the GPL-3.0 License*
