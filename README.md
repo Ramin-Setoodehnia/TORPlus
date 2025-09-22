@@ -82,17 +82,6 @@ If Passwall or Passwall2 is detected, a new SOCKS node named "Tor" will be creat
 Use this node as an outbound proxy within your Passwall setup.
 
 
----
-
-🧪 Test Your Tor Connection
-
-You can verify that your connection is routed through Tor:
-
-tor-control → Ping (check.torproject.org)
-
-Or manually:
-
-curl --socks5-hostname 127.0.0.1:9050 https://check.torproject.org
 
 
 ---
