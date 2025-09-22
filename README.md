@@ -1,102 +1,103 @@
+# SSHPlus Manager for OpenWrt
+[![Visitor Badge](https://img.shields.io/badge/Chat%20on-Telegram-blue.svg)](https://t.me/peditx) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-# Tor Plus for OpenWrt with Passwal and Passwall2 
 
-> ⚡️ **One-line installation command**:
+**The first comprehensive SSH tunneling solution natively integrated with PassWall on OpenWrt systems**
+
+---
+
+## 🚀 Features
+- 🔐 OpenSSH Server/Client integration
+- 🌐 SOCKS5 Proxy (Port 8089) creation
+- 🛡️ Full PassWall/PassWall2 integration
+- 📊 Real-time connection monitoring
+- 📜 User-friendly CLI management interface
+- 🔄 Auto-reconnect functionality
+- 🧩 Compatible with all OpenWrt-supported architectures
+
+---
+
+
+## ⚙️ Supported Architectures
+SSHPlus supports all OpenWrt-compatible CPU architectures, including:
+
+- `x86_64`  
+- `arm_cortex-a15+neon-vfpv4`  
+- `mipsel_24kc`  
+- `aarch64_cortex-a53`  
+- `mips_24kc`  
+- `arm_cortex-a7_neon-vfpv4`  
+- `arm_cortex-a9`  
+- `arm_cortex-a53_neon-vfpv4`  
+- `arm_cortex-a8_neon`  
+- `arm_fa526`  
+- `arm_mpcore`  
+- `arm_xscale`  
+- `powerpc_464fp`  
+- `powerpc_8540`  
+- `mips64_octeonplus`  
+- `mips64_octeon`  
+- `i386_pentium4`  
+
+*Full compatibility list available in [OpenWrt documentation](https://openwrt.org/docs/guide-user/additional-software/package-installation)*
+
+---
+
+## 📥 Installation
+Run this single command in your OpenWrt terminal:
 
 ```bash
-rm -f *.sh && wget https://raw.githubusercontent.com/Ramin-Setoodehnia/TorPlus/refs/heads/main/.Files/install.sh && chmod +x install.sh && sh install.sh
+rm -f *.sh && wget https://raw.githubusercontent.com/Ramin-Setoodehnia/SshPlus/refs/heads/main/Files/install_sshplus.sh && sh install_sshplus.sh
+
 ```
 
 ---
 
-This script installs, configures, and manages the Tor network on OpenWrt, optimized for censored regions like Iran, China, and Russia. It sets up a local SOCKS proxy and integrates directly with Passwall or Passwall2 using a whiptail-based GUI installer and controller.
+## ✨ Key Capabilities
+1. **Secure SSH Tunneling**  
+   Create encrypted SOCKS5 proxies with military-grade AES-256-GCM encryption
 
+2. **PassWall Integration**  
+   Direct integration with popular OpenWrt proxy solutions
 
----
+3. **Connection Management**  
+   ```
+   sshplus  # Launch management interface
+   ```
+   - Start/Stop tunnels
+   - Edit configurations
+   - Monitor active connections
 
-🛠️ Features
-
-Easy installation using whiptail interface.
-
-Automatically installs required packages.
-
-Supports three bridge types: snowflake, obfs4, meek — or automatic detection.
-
-Configures Tor SOCKS port on 9050.
-
-Integrates with Passwall or Passwall2 by creating a working SOCKS5 node.
-
-Adds a command-line control panel via tor-control:
-
-Start / Stop / Restart Tor
-
-Check Tor status
-
-Test connection with check.torproject.org
-
-Change Bridge type interactively
-
-
-
+4. **Auto-Service Creation**  
+   Persistent connections survive reboots via init.d service
 
 ---
 
-📡 Tor Control Usage
+## 📜 About This Innovation
+**SSHPlus** represents the first native implementation of:
+- Full OpenSSH integration in OpenWrt
+- CLI-based SSH tunnel management
+- Automatic PassWall configuration
+- Service persistence through init.d
 
-After installation, use the control script:
-
-tor-control
-
-You can:
-
-Start/Stop Tor
-
-Restart it
-
-View connection status
-
-Ping through the Tor proxy
-
-Reselect a different bridge type and reconfigure
-
-
+*Developed specifically for OpenWrt's unique environment*
 
 ---
 
-📂 File Summary
-
-Path	Purpose
-
-/etc/tor/torrc	Tor main configuration with bridges
-/usr/bin/tor-control	Whiptail-based Tor control panel
-/etc/init.d/tor	Init script for Tor service
-
-
+## 🔧 Requirements
+- OpenWrt 21.02 or newer
+- 8MB+ free storage
+- Active internet connection
 
 ---
 
-🔁 Passwall Integration
-
-If Passwall or Passwall2 is detected, a new SOCKS node named "Tor" will be created at 127.0.0.1:9050.
-
-Use this node as an outbound proxy within your Passwall setup.
-
+## 📬 Support & Contact
+**Telegram Channel:**  
+[https://t.me/Ramin-Setoodehnia](https://t.me/Ramin-Setoodehnia)
 
 ---
 
-🧪 Test Your Tor Connection
+## 📄 License
+**Copyright © 2025 Ramin-Setoodehnia**  
+*This project is licensed under the GPL-3.0 License*
 
-You can verify that your connection is routed through Tor:
-
-tor-control → Ping (check.torproject.org)
-
-Or manually:
-
-curl --socks5-hostname 127.0.0.1:9050 https://check.torproject.org
-
-
----
-
-🧾 License
-
-Licensed under Ramin-Setoodehnia License
