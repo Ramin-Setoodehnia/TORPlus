@@ -81,3 +81,9 @@ If Passwall or Passwall2 is Detected, a new SOCKS node named "Tor Plus" will be 
 
 Use this node as an outbound Proxy within your Passwall setup.
 
+---
+
+🧾 License
+
+Licensed under Ramin.Setoodehnia License 📢 Telegram Channel: https://t.me/AlfaSoft_IR
+
