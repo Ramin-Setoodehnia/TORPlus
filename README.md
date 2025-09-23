@@ -85,5 +85,5 @@ Use this node as an outbound Proxy within your Passwall setup.
 
 🧾 License
 
-Licensed under Ramin.Setoodehnia License 📢 Telegram Channel: https://t.me/AlfaSoft_IR
+Licensed under Ramin.Setoodehnia License 
 
